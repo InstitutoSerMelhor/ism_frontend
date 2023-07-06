@@ -1,6 +1,7 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 
+// const inter está aplicando uma font ao body através de uma classe
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -15,7 +16,10 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="pt-br">
-			<body className={inter.className}>{children}</body>
+            <body className={inter.className}>
+                {/* children está adicionando o arquivo "page.tsx" (que é a Home) desta pasta ao body do site */}
+                {children} 
+            </body>
 		</html>
 	)
 }
