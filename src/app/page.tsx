@@ -1,10 +1,10 @@
-
+import Link from 'next/link'
 
 export default function Home() {
   return (
       <>
           <nav className="bg-red-500">
-                <button>Doações</button>
+                <Link href="/Donation">Doações</Link>
             </nav>
             <main>
                 <h1>HOME</h1>
