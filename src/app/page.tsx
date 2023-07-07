@@ -3,11 +3,11 @@
 export default function Home() {
   return (
       <>
-          <main>
-            <nav className="bg-red-300">
+          <nav className="bg-red-500">
                 <button>Doações</button>
             </nav>
-            <h1>HOME</h1>
+            <main>
+                <h1>HOME</h1>
           </main>
       </>
   )
