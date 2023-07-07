@@ -4,7 +4,10 @@ export default function Home() {
   return (
       <>
           <main>
-              <h1>New Page</h1>
+            <nav className="bg-red-300">
+                <button>Doações</button>
+            </nav>
+            <h1>HOME</h1>
           </main>
       </>
   )
