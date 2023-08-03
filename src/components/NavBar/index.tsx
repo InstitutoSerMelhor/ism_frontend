@@ -2,33 +2,26 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import ism_logo from '../../assets/ism_logo.svg'
+import RouterLinks from './RouterLinks'
+
+// a qualidade da Logo não está boa, por isso tive que redimensionar ela toda na tag Image.
 
 const NavBar = () => {
     return (
         <nav className='bg-blue-950 h-16 '>
             <ul className='flex flex-row items-center justify-between h-full p-4'>
-                <Image src={ism_logo} width={140} alt='Logo do Instituto ISM' />
+                <Image className='mt-9' src={ism_logo} width={180} alt='Logo do Instituto ISM' />
                 <div className='flex flex-row items-center gap-6 '>
+                    <RouterLinks route='/' title='Home' />
+                    <RouterLinks route='/JoinUs' title='Junte-se a nós' />
+                    <RouterLinks route='/About' title='Sobre nós' />
+                    <RouterLinks route='/News' title='Notícias' />
+                    <RouterLinks route='/Contact' title='Contato' />
+                    <RouterLinks route='/SignIn' title='Login' />
                     <li>
-                        <Link className='text-white text-sm font-light' href={'/'}>Home</Link>
-                    </li>
-                    <li>
-                        <Link className='text-white text-sm font-light' href="/JoinUs">Junte-se a nós</Link>
-                    </li>
-                    <li>
-                        <Link className='text-white text-sm font-light' href={'/About'}>Sobre nós</Link>
-                    </li>
-                    <li>
-                        <Link className='text-white text-sm font-light' href={'/News'}>Notícias</Link>
-                    </li>
-                    <li>
-                        <Link className='text-white text-sm font-light' href={'/Contact'}>Contato</Link>
-                    </li>
-                    <li>
-                        <Link className='text-white text-sm font-light' href={'/signin'}>Login</Link>
-                    </li>
-                    <li>
-                        <button className='h-10 w-32 bg-green-600 rounded-lg text-sm text-white font-light'>Doar Agora</button>
+                        <button className='h-10 w-32 bg-green-600 rounded-lg text-xs text-white font-light'>
+                            Doar Agora
+                        </button>
                     </li>
                 </div>
             </ul>
