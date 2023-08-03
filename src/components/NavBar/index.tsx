@@ -19,7 +19,7 @@ const NavBar = () => {
                     <RouterLinks route='/Contact' title='Contato' />
                     <RouterLinks route='/SignIn' title='Login' />
                     <li>
-                        <button className='h-10 w-32 bg-green-600 rounded-lg text-xs text-white font-light'>
+                        <button className='h-10 w-32 bg-green-600 rounded-lg text-xs text-white font-light hover:bg-green-900 transition-all duration-150'>
                             Doar Agora
                         </button>
                     </li>
