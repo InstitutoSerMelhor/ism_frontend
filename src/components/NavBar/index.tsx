@@ -1,11 +1,9 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import React from 'react'
 import ism_logo from '../../assets/ism_logo.svg'
 import RouterLinks from './RouterLinks'
 
 // a qualidade da Logo não está boa, por isso tive que redimensionar ela toda na tag Image.
-
 const NavBar = () => {
     return (
         <nav className='bg-blue-950 h-16 '>

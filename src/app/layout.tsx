@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import './globals.css'
 import { Poppins } from 'next/font/google'
 import NavBar from '@/components/NavBar'
