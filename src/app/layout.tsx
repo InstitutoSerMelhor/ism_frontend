@@ -2,6 +2,8 @@ import './globals.css'
 import { Poppins } from 'next/font/google'
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
+import { Suspense } from 'react'
+import Loading from './loading'
 
 // const poppins está aplicando uma font ao body através de uma classe
 const poppins = Poppins({
@@ -23,7 +25,9 @@ export default function RootLayout({
         <html lang="pt-br">
             <body className={poppins.className}>
                 <NavBar />
-                {children /* children está adicionando o arquivo "page.tsx" (que é a Home) desta pasta ao body do site */}
+                <Suspense fallback={<Loading />}>
+                    {children /* children está adicionando o arquivo "page.tsx" (que é a Home) desta pasta ao body do site */}
+                </Suspense>
                 <Footer />
             </body>
         </html>
