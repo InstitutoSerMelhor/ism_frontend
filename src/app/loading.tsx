@@ -2,7 +2,9 @@ import React from 'react'
 
 const Loading = () => {
   return (
-    <p className='flex text-center items-center'>Carregando...</p>
+    <p className='flex text-center items-center justify-center'>
+      Carregando...
+    </p>
   )
 }
 
