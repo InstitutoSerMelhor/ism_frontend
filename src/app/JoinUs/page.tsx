@@ -68,7 +68,7 @@ const JoinUs = () => {
                         <TextField fullWidth multiline rows={5} required {...register("description")} />
                     </Grid>
                     <Grid item xs={12} paddingTop={3}>
-                        <button className='bg-green-600 w-full text-white rounded-lg p-4' type='submit'>
+                        <button className='bg-green-600 hover:bg-green-700 w-full text-white rounded-lg p-4 transition duration-900 ease-in-out' type='submit'>
                             Enviar
                         </button>
                     </Grid>
