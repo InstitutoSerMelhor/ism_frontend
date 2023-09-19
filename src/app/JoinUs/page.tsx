@@ -39,12 +39,12 @@ const JoinUs = () => {
             <Grid item md={12} lg={6} xl={5} display='flex' alignItems='center' justifyContent='center' container>
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <Grid item xs={12}>
-                        <Typography fontSize={32} fontWeight='bold' color='#2369F6' justifyContent='center' display='flex'>
+                        <Typography fontSize={isSmallScreen ? 28 : 32} fontWeight='bold' color='#2369F6' justifyContent='center' display='flex'>
                             Junte-se a Nós
                         </Typography>
                     </Grid>
                     <Grid item xs={12}>
-                        <Typography fontSize={35} fontWeight='bold' color='#0038AA'>
+                        <Typography fontSize={isSmallScreen ? 25 : 35} fontWeight='bold' color='#0038AA' justifyContent='center' display='flex'>
                             Ajude a ampliar o Instituto
                         </Typography>
                     </Grid>
