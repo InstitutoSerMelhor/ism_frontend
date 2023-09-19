@@ -26,12 +26,12 @@ const JoinUs = () => {
     }, []);
 
     return (
-        <Grid container padding={5}>
+        <Grid container padding={10}>
             <Grid item xs={12} md={12} lg={6} xl={7} maxHeight={isSmallScreen ? '300px' : '700px'} display='flex' alignItems='center' justifyContent='center'>
                 <div className="relative" style={{ width: `${isSmallScreen ? '20vw' : '33vw'}` }}>
                     <Image
                         src={imgHands}
-                        alt="Logo do Instituto ISM"
+                        alt="Mãos"
                         className={isSmallScreen ? 'ml-5' : 'ml-12'}
                     />
                 </div>
