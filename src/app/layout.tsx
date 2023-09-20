@@ -21,10 +21,10 @@ export default function RootLayout({
 }) {
     return (
         <html lang="pt-br">
-            <body className={poppins.className}>
+            <body className="bg-gradient-to-t from-[#fbc2eb] to-[#a6c1ee] h-screen">
                 <NavBar />
-                {children /* children está adicionando o arquivo "page.tsx" (que é a Home) desta pasta ao body do site */}
-                <Footer />
+                {/* {children  children está adicionando o arquivo "page.tsx" (que é a Home) desta pasta ao body do site */}
+                {/* <Footer /> */}
             </body>
         </html>
     )
