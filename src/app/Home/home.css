@@ -1,0 +1,7 @@
+.bg__img-children {
+    /* position: relative; */
+    width: 100%;
+    height: 100vh;
+    background: url("../../assets/home.jpg") no-repeat center center local; 
+    background-size: cover;
+}

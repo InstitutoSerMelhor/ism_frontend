@@ -1,14 +1,5 @@
-import Link from 'next/link'
+import Home from "./Home/page";
 
-export default function Home() {
-  return (
-      <>
-          <nav className="bg-red-500">
-                <Link href="/Donation">Doações</Link>
-            </nav>
-            <main>
-                <h1>HOME</h1>
-          </main>
-      </>
-  )
+export default function PageChildren() {
+  return (<Home />)
 }
