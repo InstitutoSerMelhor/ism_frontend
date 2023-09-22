@@ -9,7 +9,7 @@ type RouterProps = {
 const RouterLinks = ({ route, title }: RouterProps) => {
     return (
         <li className='flex flex-row items-center gap-1'>
-            <Link className='text-sm font-light hover:border-b-2 hover:border-[#0038AA]'
+            <Link className='text-base font-medium hover:border-b-2 hover:border-[#0038AA]'
                 href={route}>
                 {title}
             </Link>

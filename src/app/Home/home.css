@@ -1,7 +1,13 @@
 .bg__img-children {
     /* position: relative; */
     width: 100%;
-    height: 100vh;
-    background: url("../../assets/home.jpg") no-repeat center center local; 
+    height: 104vh;
+    background: url("../../assets/images/home.jpg") no-repeat center center local; 
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.logo-home {
+    object-fit: scale-down;
 }
