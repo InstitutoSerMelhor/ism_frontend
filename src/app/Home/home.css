@@ -1,0 +1,11 @@
+.bg__img-children {
+    width: 100%;
+    height: 104vh;
+    background: url("../../assets/images/hero-home.jpg") no-repeat center center local; 
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.logo-home {
+    object-fit: scale-down;
+}

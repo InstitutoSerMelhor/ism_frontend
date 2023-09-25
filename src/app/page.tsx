@@ -1,14 +1,10 @@
-import Link from 'next/link'
+import WhoWeAre from "./About/Whoweare/page";
+import Home from "./Home/Home";
 
-export default function Home() {
+export default function PageChildren() {
   return (
-      <>
-          <nav className="bg-red-500">
-                <Link href="/Donation">Doações</Link>
-            </nav>
-            <main>
-                <h1>HOME</h1>
-          </main>
-      </>
+    <>
+      <Home />
+    </>
   )
 }
