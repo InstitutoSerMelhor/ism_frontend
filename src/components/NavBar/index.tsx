@@ -3,6 +3,7 @@ import React, { Dispatch, SetStateAction, useState } from 'react'
 import { FaBars } from 'react-icons/fa6';
 import { FaXmark } from 'react-icons/fa6';
 import RouterLinks from './RouterLinks'
+import './navbar.css';
 
 type RouterProps = {
     beTransparent: boolean, 
