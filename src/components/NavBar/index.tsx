@@ -1,8 +1,9 @@
 'use client'
-import React, { Dispatch, SetStateAction, useState } from 'react'
+import React, { Dispatch, SetStateAction, useState } from 'react';
 import { FaBars } from 'react-icons/fa6';
 import { FaXmark } from 'react-icons/fa6';
-import RouterLinks from './RouterLinks'
+import RouterLinks from './RouterLinks';
+import Link from 'next/link';
 import './navbar.css';
 
 type RouterProps = {
@@ -26,13 +27,12 @@ const NavBar = ({ beTransparent, setCanBlur }: RouterProps) => {
                         <RouterLinks route='/' title='Home' />
                         <RouterLinks route='/JoinUs' title='Junte-se a nós' />
                         <RouterLinks route='/About' title='Sobre nós' />
-                        <RouterLinks route='/News' title='Notícias' />
                         <RouterLinks route='/Contact' title='Contato' />
                         <div className='flex md:flex-row flex-col items-center gap-8 md:ml-16'>
                             <RouterLinks route='/SignIn' title='Login' />   
-                            <button className='bg-[#F88D12] text-base text-white px-8 py-2 rounded-[8px]'>
+                            <Link href="#donate-now" className='bg-[#F88D12] text-base text-white px-8 py-2 rounded-[8px]'>
                                 Doar Agora
-                            </button>  
+                            </Link>  
                         </div>
                     </div>
                 </ul>

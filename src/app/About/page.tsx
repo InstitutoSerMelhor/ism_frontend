@@ -11,14 +11,24 @@ const About = () => {
                 <h3 className='max-w-md font-light text-sm'>
                     Sobre o Instituto:
                     <br />
-                    O INSTITUTO SER MELHOR é uma OSC, fundada na Cidade de Carapicuíba, em 2007, com objetivo de unificar valores e saberes e desenvolver projetos nas mais diversas áreas da sociedade, tendo a educação, a ciência, a cultura e o meio ambiente como princípios norteadores do propósito de desenvolvimento social e socioambiental.
+                    O INSTITUTO SER MELHOR é uma OSC, fundada na Cidade de Carapicuíba, em 2007, com objetivo
+                    de unificar valores e saberes e desenvolver projetos nas mais diversas áreas da sociedade, 
+                    tendo a educação, a ciência, a cultura e o meio ambiente como princípios norteadores do 
+                    propósito de desenvolvimento social e socioambiental.
                 </h3>
                 <small className='max-w-md font-light'>
-                    A educação, a ciência e a cultura são a pedra fundamental do ISM, assim é importante pensar um sistema de ensino voltado para a criatividade e desenvolvimento intelectual, complementando, diretamente, a BNCC– Base Nacional Comum Curricular.
+                    A educação, a ciência e a cultura são a pedra fundamental do ISM, assim é importante 
+                    pensar um sistema de ensino voltado para a criatividade e desenvolvimento intelectual, 
+                    complementando, diretamente, a BNCC– Base Nacional Comum Curricular.
                 </small>
             </div>
             <small className='mx-20 my-6 text-center font-light italic'>
-                "Nossos planejamentos educacionais, buscam seguir diretamente os fundamentos educacionais de Ken Robinson, considerado o patrono da educação criativa nas melhores instituições de ensino do mundo.  Para o ISM a educação deve ser vista como uma comunidade de aprendizes, com desenvolvimento de ótimas relações entre estudantes e professores, unidos por um currículo integrado, além disso, disciplinas humanas e exatas necessitam ter praticamente a mesma importância ou tanto quanto."
+                "Nossos planejamentos educacionais, buscam seguir diretamente os fundamentos educacionais 
+                de Ken Robinson, considerado o patrono da educação criativa nas melhores instituições de 
+                ensino do mundo.  Para o ISM a educação deve ser vista como uma comunidade de aprendizes, 
+                com desenvolvimento de ótimas relações entre estudantes e professores, unidos por um currículo
+                integrado, além disso, disciplinas humanas e exatas necessitam ter praticamente a mesma 
+                importância ou tanto quanto."
             </small>
             <Image
                 src={AboutUsImg}
