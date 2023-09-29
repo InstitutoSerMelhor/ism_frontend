@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import livroNaMao from '../../assets/images/livro-na-mao.png'; 
+import astronautPng from '../../assets/images/astronaut.png'; 
 import React from 'react'
 import Title from '../Title';
 import Description from '../Description';
@@ -18,7 +18,7 @@ const Mission = () => {
         <Image
             width={300}
             height={300}
-            src={livroNaMao}
+            src={astronautPng}
             alt='Duas pessoas segurando um livro.'
             className='mx-16 md:flex hidden'
         />
