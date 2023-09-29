@@ -14,7 +14,6 @@ export default function PageChildren() {
         <Mission />
         <Vision />
       </section>
-
       <Commitment />
       <DonateOption />
     </section>

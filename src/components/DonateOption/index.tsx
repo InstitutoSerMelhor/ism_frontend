@@ -49,6 +49,7 @@ const DonateOption = () => {
             <section>
               <p className="text-[#4B5563] md:text-left text-justify font-medium text-lg mb-5">
                 ORGANIZACAO ASS C P PROM E DES DA ASS EDUC CULT AMB E SOCIAL<br />
+                Nome da Empresa: Instituto Ser Melhor<br />
                 CNPJ: 09.040.440/0001-47
               </p>
             </section>
@@ -56,7 +57,6 @@ const DonateOption = () => {
             <section>
               <p className="text-[#4B5563] md:text-left text-justify font-medium text-lg mb-5">
                 Banco Cora<br />
-                Nome da Empresa: Instituto Ser Melhor<br />
                 Instituição: 403 - Cora SCD<br />
                 Agência: 0001<br />
                 Conta: 3298865-3
@@ -68,7 +68,7 @@ const DonateOption = () => {
                 Banco do Brasil<br />
                 Banco 001<br />
                 Agência: 5658-8<br />
-                Conta Corrente: 34.108-X
+                Conta Corrente: 34.107-X
               </p>
             </section>
           </section>

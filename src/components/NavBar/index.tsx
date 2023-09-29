@@ -8,10 +8,10 @@ import './navbar.css';
 
 type RouterProps = {
     beTransparent: boolean, 
-    setCanBlur: Dispatch<SetStateAction<boolean>>, 
+    setCanBlur?: Dispatch<SetStateAction<boolean>>, 
 };
 
-const NavBar = ({ beTransparent, setCanBlur }: RouterProps) => {
+const NavBar = ({ beTransparent, setCanBlur = () => {}}: RouterProps) => {
     const [isToggle, setIsToggle] = useState(false);
 
     const toggleMenu = () => {
@@ -20,10 +20,10 @@ const NavBar = ({ beTransparent, setCanBlur }: RouterProps) => {
     }
 
     return (
-        <header className={`${beTransparent ? '' : 'bg-white'}`}>
-            <nav className=' flex md:justify-between justify-end items-center w-[92%] mx-auto md:pt-5 pt-6 pr-1'>
-                <ul className={`${isToggle ? 'top-[9%]' : 'top-[-100%]'} md:static duration-500 absolute md:min-h-fit min-h-[60vh] left-0 md:translate-x-[18%] md:w-auto w-full mx-auto flex items-center px-5`}>
-                    <div className='flex md:flex-row flex-col md:items-center items-center md:gap-[4vw] gap-8 text-white w-full'>
+        <header className={`${beTransparent ? '' : 'bg-[#2637F7]'} md:py-[1.10rem] py-5`}>
+            <nav className=' flex md:justify-between justify-end items-center w-[92%] mx-auto pr-1'>
+                <ul className={`${isToggle ? 'top-[9%]' : 'top-[-100%]'} ${beTransparent ? '' : 'bg-[#2637F7]'} md:static duration-500 absolute md:min-h-fit min-h-[60vh] left-0 md:translate-x-[18%] md:w-auto w-full mx-auto flex items-center px-5`}>
+                    <div className={`${beTransparent ? '' : 'bg-[#2637F7]'} flex md:flex-row flex-col md:items-center items-center md:gap-[4vw] gap-8 text-white w-full`}>
                         <RouterLinks route='/' title='Home' />
                         <RouterLinks route='/JoinUs' title='Junte-se a nós' />
                         <RouterLinks route='/About' title='Sobre nós' />
