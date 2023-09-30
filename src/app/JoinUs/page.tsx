@@ -5,6 +5,7 @@ import { TextField, Typography, Grid } from '@mui/material';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import '../../styles/tailwind.css';
 import imgHands from '../../assets/img_hands.svg'
+import NavBar from '@/components/NavBar';
 
 const JoinUs = () => {
     const [isSmallScreen, setIsSmallScreen] = useState(false)
@@ -26,6 +27,8 @@ const JoinUs = () => {
     }, []);
 
     return (
+        <section>
+            <NavBar beTransparent={false} />
         <Grid container padding={10}>
             <Grid item xs={12} md={12} lg={6} xl={7} maxHeight={isSmallScreen ? '300px' : '700px'} display='flex' alignItems='center' justifyContent='center'>
                 <div className="relative" style={{ width: `${isSmallScreen ? '20vw' : '33vw'}` }}>
@@ -75,6 +78,7 @@ const JoinUs = () => {
                 </form>
             </Grid>
         </Grid>
+    </section>
     )
 }
 

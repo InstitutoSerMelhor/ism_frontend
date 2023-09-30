@@ -1,4 +1,3 @@
-import Description from "@/components/Description";
 import Link from "next/link";
 
 const Commitment = () => {

@@ -1,16 +1,17 @@
 'use client'
-import React, { Dispatch, SetStateAction, useState } from 'react'
+import React, { Dispatch, SetStateAction, useState } from 'react';
 import { FaBars } from 'react-icons/fa6';
 import { FaXmark } from 'react-icons/fa6';
-import RouterLinks from './RouterLinks'
+import RouterLinks from './RouterLinks';
+import Link from 'next/link';
 import './navbar.css';
 
 type RouterProps = {
     beTransparent: boolean, 
-    setCanBlur: Dispatch<SetStateAction<boolean>>, 
+    setCanBlur?: Dispatch<SetStateAction<boolean>>, 
 };
 
-const NavBar = ({ beTransparent, setCanBlur }: RouterProps) => {
+const NavBar = ({ beTransparent, setCanBlur = () => {}}: RouterProps) => {
     const [isToggle, setIsToggle] = useState(false);
 
     const toggleMenu = () => {
@@ -19,20 +20,19 @@ const NavBar = ({ beTransparent, setCanBlur }: RouterProps) => {
     }
 
     return (
-        <header className={`${beTransparent ? '' : 'bg-white'}`}>
-            <nav className=' flex md:justify-between justify-end items-center w-[92%] mx-auto md:pt-5 pt-6 pr-1'>
-                <ul className={`${isToggle ? 'top-[9%]' : 'top-[-100%]'} md:static duration-500 absolute md:min-h-fit min-h-[60vh] left-0 md:translate-x-[18%] md:w-auto w-full mx-auto flex items-center px-5`}>
-                    <div className='flex md:flex-row flex-col md:items-center items-center md:gap-[4vw] gap-8 text-white w-full'>
+        <header className={`${beTransparent ? '' : 'bg-[#2637F7]'} md:py-[1.10rem] py-5`}>
+            <nav className=' flex md:justify-between justify-end items-center w-[92%] mx-auto pr-1'>
+                <ul className={`${isToggle ? 'top-[9%]' : 'top-[-100%]'} ${beTransparent ? '' : 'bg-[#2637F7]'} md:static duration-500 absolute md:min-h-fit min-h-[60vh] left-0 md:translate-x-[18%] md:w-auto w-full mx-auto flex items-center px-5`}>
+                    <div className={`${beTransparent ? '' : 'bg-[#2637F7]'} flex md:flex-row flex-col md:items-center items-center md:gap-[4vw] gap-8 text-white w-full`}>
                         <RouterLinks route='/' title='Home' />
                         <RouterLinks route='/JoinUs' title='Junte-se a nós' />
                         <RouterLinks route='/About' title='Sobre nós' />
-                        <RouterLinks route='/News' title='Notícias' />
                         <RouterLinks route='/Contact' title='Contato' />
                         <div className='flex md:flex-row flex-col items-center gap-8 md:ml-16'>
                             <RouterLinks route='/SignIn' title='Login' />   
-                            <button className='bg-[#F88D12] text-base text-white px-8 py-2 rounded-[8px]'>
+                            <Link href="#donate-now" className='bg-[#F88D12] text-base text-white px-8 py-2 rounded-[8px]'>
                                 Doar Agora
-                            </button>  
+                            </Link>  
                         </div>
                     </div>
                 </ul>
