@@ -1,14 +1,21 @@
-import Link from 'next/link'
+import Mission from "@/components/Mission";
+import WhoWeAre from "../components/WhoWeAre/index";
+import Home from "./Home/Home";
+import Vision from "@/components/Vision";
+import Commitment from "@/components/Commitment";
+import DonateOption from "@/components/DonateOption";
 
-export default function Home() {
-    return (
-        <>
-            <nav className="bg-red-500">
-                <Link href="/Donation">Doações</Link>
-            </nav>
-            <main className="m-0 p-0" style={{ height: "75vh" }}>
-                <h1>HOME</h1>
-            </main>
-        </>
-    )
+export default function PageChildren() {
+  return (
+    <section>
+      <Home />
+      <section className="md:w-[75%] w-[90%] mx-auto py-14">
+        <WhoWeAre />
+        <Mission />
+        <Vision />
+      </section>
+      <Commitment />
+      <DonateOption />
+    </section>
+  )
 }
