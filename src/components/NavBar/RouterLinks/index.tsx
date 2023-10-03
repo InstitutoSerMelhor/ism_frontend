@@ -1,5 +1,5 @@
-import Link from 'next/link'
-import React from 'react'
+import Link from 'next/link';
+import '../navbar.css';
 
 type RouterProps = {
     route: string;
@@ -10,7 +10,7 @@ type RouterProps = {
 const RouterLinks = ({ route, title, classStyle }: RouterProps) => {
     return (
         <li className={`${classStyle} flex flex-row items-center gap-1`}>
-            <Link className='text-base font-medium'
+            <Link className='link-underline text-base font-medium'
                 href={route}>
                 {title}
             </Link>

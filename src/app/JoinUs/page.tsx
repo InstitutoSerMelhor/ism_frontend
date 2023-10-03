@@ -29,25 +29,27 @@ const JoinUs = () => {
     return (
         <section>
             <NavBar beTransparent={false} />
-        <Grid container padding={10}>
-            <Grid item xs={12} md={12} lg={6} xl={7} maxHeight={isSmallScreen ? '300px' : '700px'} display='flex' alignItems='center' justifyContent='center'>
-                <div className="relative" style={{ width: `${isSmallScreen ? '20vw' : '33vw'}` }}>
+        <Grid container padding={4} className='flex lg:flex-row flex-col'>
+            <Grid item xs={16} md={12} lg={6} xl={7} maxHeight={isSmallScreen ? '400px' : '700px'} display='flex' alignItems='center' justifyContent='center' marginBottom={isSmallScreen ? 6 : 0}>
+                {/* <div className="relative" style={{ width: `${isSmallScreen ? '20vw' : '33vw'}` }}> */}
                     <Image
                         src={imgHands}
                         alt="Mãos"
-                        className={isSmallScreen ? 'ml-5' : 'ml-12'}
+                        width={isSmallScreen ? 400 : 600}
+                        height={isSmallScreen ? 400 : 600}
+                        className={`${isSmallScreen ? 'ml-5' : 'ml-12'}`}
                     />
-                </div>
+                {/* </div> */}
             </Grid>
             <Grid item md={12} lg={6} xl={5} display='flex' alignItems='center' justifyContent='center' container>
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <Grid item xs={12}>
-                        <Typography fontSize={isSmallScreen ? 28 : 32} fontWeight='bold' color='#2369F6' justifyContent='center' display='flex'>
+                        <Typography fontSize={isSmallScreen ? 28 : 32} fontWeight='bold' color='#2369F6' justifyContent='center' display='flex' marginBottom={2}>
                             Junte-se a Nós
                         </Typography>
                     </Grid>
                     <Grid item xs={12}>
-                        <Typography fontSize={isSmallScreen ? 25 : 35} fontWeight='bold' color='#0038AA' justifyContent='center' display='flex'>
+                        <Typography fontSize={isSmallScreen ? 20 : 35} fontWeight='bold' color='#0038AA' justifyContent='center' display='flex'>
                             Ajude a ampliar o Instituto
                         </Typography>
                     </Grid>

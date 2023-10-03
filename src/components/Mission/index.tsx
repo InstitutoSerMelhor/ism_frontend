@@ -6,8 +6,8 @@ import Description from '../Description';
 
 const Mission = () => {
   return (
-      <section className='flex justify-center items-center mb-15'>
-        <section className='md:w-[60%] w-full flex flex-col justify-items h-[100%]'>
+      <section className='flex justify-center items-center md:pb-18'>
+        <section className='md:w-[60%] w-full flex flex-col justify-center h-[100%]'>
             <Title text='Missão' />
             <Description message='
                 Estamos empenhados em derrotar a ignorância, buscando conhecimento, criatividade e 
@@ -20,7 +20,7 @@ const Mission = () => {
             height={300}
             src={astronautPng}
             alt='Duas pessoas segurando um livro.'
-            className='mx-16 md:flex hidden'
+            className='lg:mx-16 sm:mx-10 sm:flex hidden'
         />
     </section>
   )
