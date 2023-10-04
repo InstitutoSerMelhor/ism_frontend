@@ -47,6 +47,7 @@ const Projects = () => {
               description="Tem como objetivo incentivar, alunos, pessoas e a sociedade a ter maior compaixão, respeito e empatia pelo ser humano, pelos animais e pelo meio ambiente unificando com a ideia de desenvolvimento cultural regional."
             />
             
+            {/* NÃO FUNCIONOU */}
             {/* {
               projetos.map((p: Projeto, index) => {
                 return (
