@@ -1,9 +1,9 @@
 @media (min-width: 768px) {
-    a {
+    .link-underline {
         position: relative;
     }
       
-    a::before {
+    .link-underline::before {
         content: "";
         position: absolute;
         display: block;
@@ -17,7 +17,7 @@
         transition: transform 0.3s ease;
     }
     
-    a:hover::before {
+    .link-underline:hover::before {
         transform: scaleX(1);
     }
 }

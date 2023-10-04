@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Commitment = () => {
   return (
-    <section className="md:w-[75%] w-[85%] mx-auto py-16">
+    <section className="md:w-[75%] w-[85%] mx-auto mt-28 py-16">
         <h2 className="text-[#2637F7] text-center font-bold md:text-4xl text-3xl mb-20">Compromissos</h2>
 
         <h3 className="text-[#2637F7] md:text-left text-left font-bold md:text-2xl text-2xl mb-5">Pacto Global</h3>

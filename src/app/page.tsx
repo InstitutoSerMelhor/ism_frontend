@@ -9,7 +9,7 @@ export default function PageChildren() {
   return (
     <section>
       <Home />
-      <section className="md:w-[75%] w-[90%] mx-auto py-14">
+      <section className="lg:w-[75%] w-[90%] sm:h-[200vh] h-[120vh] flex flex-col justify-around mx-auto">
         <WhoWeAre />
         <Mission />
         <Vision />
