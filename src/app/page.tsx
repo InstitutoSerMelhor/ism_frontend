@@ -4,6 +4,7 @@ import Home from "./Home/Home";
 import Vision from "@/components/Vision";
 import Commitment from "@/components/Commitment";
 import DonateOption from "@/components/DonateOption";
+import Projects from "./Projects/page";
 
 export default function PageChildren() {
   return (
@@ -15,7 +16,9 @@ export default function PageChildren() {
         <Vision />
       </section>
       <Commitment />
+      <Projects />
       <DonateOption />
     </section>
-  )
+  );
 }
+
