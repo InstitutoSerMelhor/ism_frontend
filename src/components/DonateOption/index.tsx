@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const DonateOption = () => {
   return (
-    <section id="donate-now" className="mt-20 mb-5">
+    <section id="donate-now" className="md:mt-36 mb-5">
       <h2 className="text-[#2637F7] text-center font-bold md:text-4xl text-3xl mb-20">Faça sua doação</h2>
 
       <section className="flex md:flex-row flex-col md:justify-round items-center md:gap-0 gap-10 justify-evenly md:w-[75%] w-[90%] mx-auto py-14 bg-[#efefef] rounded">

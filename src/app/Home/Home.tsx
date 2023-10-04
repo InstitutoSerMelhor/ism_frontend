@@ -11,7 +11,7 @@ const Home = () => {
     return (
         <main className='bg__img-children'>
             <NavBar beTransparent={true} setCanBlur={setCanBlur} />
-            <section className={`${canBlur && 'hidden'}  h-full flex flex-col md:justify-start justify-start items-center`}>
+            <section className={`${canBlur && 'hidden'} delay-100 h-full flex flex-col md:justify-start justify-start items-center`}>
                 <div className='flex items-end text-white text-center font-medium leading-normal md:text-5xl text-[2rem] h-[45%]'>
                     <p className='px-5'>Descubra o potencial <br/> transformador da educação</p>
                 </div>

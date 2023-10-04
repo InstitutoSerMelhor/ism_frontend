@@ -28,7 +28,7 @@ const Footer = () => {
     return (
         <Grid container bgcolor='#172554' className='flex flex-col lg:flex-row justify-around' paddingX={isSmallScreen ? "3rem" : "4.375rem"} paddingY="4.375rem" gap={isSmallScreen ? 12 : 0}>
 
-            <Grid container md={4} sm={5} display='flex' flexDirection="column" alignItems={isSmallScreen ? "" : "center"}>
+            <Grid item md={4} sm={5} display='flex' flexDirection="column" alignItems={isSmallScreen ? "" : "center"}>
                 <Grid item display="flex" flexDirection="column" gap={4}>
                     <Grid item>
                         <Typography color='#ffff' fontWeight="bold" variant="h6">
@@ -62,7 +62,7 @@ const Footer = () => {
                 </Grid>
             </Grid>
 
-            <Grid container md={4} sm={5} display='flex' flexDirection="column" alignItems={isSmallScreen ? "" : "center"}>
+            <Grid item md={4} sm={5} display='flex' flexDirection="column" alignItems={isSmallScreen ? "" : "center"}>
                 <Grid item display="flex" flexDirection="column" gap={4}>
                     <Typography color='#ffff' fontWeight="bold" variant="h6">
                         Mapa do Site
@@ -77,7 +77,7 @@ const Footer = () => {
                 </Grid>
             </Grid>
 
-            <Grid container md={4} sm={5} display='flex' flexDirection="column" alignItems={isSmallScreen ? "" : "center"}>
+            <Grid item md={4} sm={5} display='flex' flexDirection="column" alignItems={isSmallScreen ? "" : "center"}>
                 <Grid item display="flex" flexDirection="column" gap={4}>
                     <Typography color='#ffff' fontWeight="bold" variant="h6">
                         Redes Sociais
