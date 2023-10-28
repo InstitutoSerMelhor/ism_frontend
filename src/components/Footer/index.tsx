@@ -3,11 +3,8 @@ import { Grid, Typography } from '@mui/material';
 import { useEffect, useState } from 'react';
 import Image from 'next/image'
 import Link from 'next/link';
+import Icon from '@/components/Icon/Icon';
 
-import facebook from '../../assets/socialIcons/facebook.svg';
-import instagram from '../../assets/socialIcons/instagram.svg';
-import linkedin from '../../assets/socialIcons/linkedin.svg';
-import whatsapp from '../../assets/socialIcons/whatsapp.svg';
 import ism_logo from '../../../public/ism-logo.png'
 
 const Footer = () => {
@@ -85,38 +82,22 @@ const Footer = () => {
                     <ul className='flex flex-row space-x-4'>
                         <li>
                             <a href='https://www.facebook.com/institutosermelhor' target='_blank'>
-                                <Image
-                                    src={facebook}
-                                    alt="Facebook"
-                                    width={40}
-                                />
+                                <Icon name="facebook"/>
                             </a>
                         </li>
                         <li>
                             <a href='https://www.instagram.com/instsermelhor/' target='_blank'>
-                                <Image
-                                    src={instagram}
-                                    alt="Instagram"
-                                    width={40}
-                                />
+                                <Icon name="instagram"/>
                             </a>
                         </li>
                         <li>
                             <a href='https://www.linkedin.com/company/institutosermelhor' target='_blank'>
-                                <Image
-                                    src={linkedin}
-                                    alt="LinkedIn"
-                                    width={40}
-                                />
+                                <Icon name="linkedin"/>
                             </a>
                         </li>
                         <li>
                             <a href='https://wa.me/11981063924' target='_blank'>
-                                <Image
-                                    src={whatsapp}
-                                    alt="Whatsapp"
-                                    width={40}
-                                />
+                                <Icon name="whatsapp"/>
                             </a>
                         </li>
                     </ul>

@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import livroNaMao from '../../assets/images/livro-na-mao.png'; 
 import Title from '../Title';
-import Description from '../Description';
+import Description from '../CardTransparence/Description';
 
 
 const WhoWeAre = () => {
