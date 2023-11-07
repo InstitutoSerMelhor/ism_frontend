@@ -2,7 +2,7 @@ import Image from 'next/image'
 import astronautPng from '../../assets/images/astronaut.png'; 
 import React from 'react'
 import Title from '../Title';
-import Description from '../Description';
+import Description from '../CardTransparence/Description';
 
 const Mission = () => {
   return (

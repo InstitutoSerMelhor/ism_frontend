@@ -1,5 +1,5 @@
 import Title from '../Title';
-import Description from '../Description';
+import Description from '../CardTransparence/Description';
 import grafico from '../../assets/images/graficomelhorado.png'; 
 import Image from 'next/image';
 
