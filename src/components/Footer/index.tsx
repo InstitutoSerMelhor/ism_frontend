@@ -82,22 +82,34 @@ const Footer = () => {
                     <ul className='flex flex-row space-x-4'>
                         <li>
                             <a href='https://www.facebook.com/institutosermelhor' target='_blank'>
-                                <Icon name="facebook"/>
+                                <Icon 
+                                name="facebook"
+                                alt = "Facebook"
+                                />
                             </a>
                         </li>
                         <li>
                             <a href='https://www.instagram.com/instsermelhor/' target='_blank'>
-                                <Icon name="instagram"/>
+                                <Icon 
+                                name="instagram"
+                                alt = "Instagram"
+                                />
                             </a>
                         </li>
                         <li>
                             <a href='https://www.linkedin.com/company/institutosermelhor' target='_blank'>
-                                <Icon name="linkedin"/>
+                                <Icon 
+                                name="linkedin" 
+                                alt = "Linkedin"
+                                />
                             </a>
                         </li>
                         <li>
                             <a href='https://wa.me/11981063924' target='_blank'>
-                                <Icon name="whatsapp"/>
+                                <Icon 
+                                name="whatsapp" 
+                                alt = "WhatsApp"
+                                />
                             </a>
                         </li>
                     </ul>
