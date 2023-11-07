@@ -3,9 +3,10 @@ import * as icons from '@/components/Icon/svgs/_index'
 interface IconProps {
   name?: keyof typeof icons;
   className?: string;
+  alt: string;
 }
 
-export default function Icon({name, ...props}: IconProps) {
+export default function Icon({name, alt, ...props}: IconProps) {
     const BaseIcon = 'div'
 
     return (
