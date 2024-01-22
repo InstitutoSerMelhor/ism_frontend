@@ -26,9 +26,9 @@ const NavBar = ({ beTransparent, setCanBlur = () => {}}: RouterProps) => {
                         <RouterLinks route='/' title='Home' />
                         <RouterLinks route='/JoinUs' title='Junte-se a nós' />
                         <RouterLinks route='/About' title='Sobre nós' />
-                        <RouterLinks route='/Contact' title='Contato' />
+                        <RouterLinks route='/About/Transparence' title='Transparência' />
                         <div className='flex lg:flex-row flex-col items-center gap-8 lg:ml-16'>
-                            <RouterLinks route='/SignIn' title='Login' />   
+                            {/* <RouterLinks route='/SignIn' title='Login' />    */}
                             <Link href="#donate-now" className='bg-[#F88D12] text-base text-white px-8 py-2 rounded-[8px]'>
                                 Doar Agora
                             </Link>  

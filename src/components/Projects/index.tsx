@@ -8,7 +8,6 @@ const Projects = () => {
           <h2 className="text-[#2637F7] text-center font-bold md:text-4xl text-3xl mb-20">Projetos</h2>
 
           <section className="flex flex-wrap justify-center mx-auto">
-            {/* {bg-[url('../assets/images/enviroment.png')]} */}
 
             <CardProject 
               area="Educação"

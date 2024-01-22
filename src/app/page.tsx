@@ -4,7 +4,7 @@ import Home from "./Home/Home";
 import Vision from "@/components/Vision";
 import Commitment from "@/components/Commitment";
 import DonateOption from "@/components/DonateOption";
-import Projects from "./Projects/page";
+import Projects from "@/components/Projects/index";
 
 export default function PageChildren() {
   return (
