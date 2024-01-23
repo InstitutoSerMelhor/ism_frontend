@@ -1,6 +1,5 @@
 import './globals.css'
 import { Poppins } from 'next/font/google'
-import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 
 // const poppins está aplicando uma font ao body através de uma classe
